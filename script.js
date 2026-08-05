@@ -68,17 +68,17 @@ const personajes = [
 
     {
         nombre:"Pintor Austriaco",
-        hp:70,
-        ataque:50,
-        defensa:10,
+        hp:150,
+        ataque:100,
+        defensa:25,
         imagen:"imagenes/pintorAustriaco.png"
     },
 
     {
         nombre:"Soldado Palestino",
-        hp:100,
-        ataque:10,
-        defensa:30,
+        hp:200,
+        ataque:50,
+        defensa:50,
         imagen:"imagenes/SoldadoPalestino.png"
     },
 
@@ -221,7 +221,7 @@ class Personaje{
 
             agregarLog(
                 `<span class="warning">
-                No quedan objetos
+                No quedan bendiciones
                 </span>`
             );
 
@@ -245,7 +245,7 @@ class Personaje{
 
         agregarLog(
             `<span class="heal">
-            🧪 Recuperaste ${cantidad} HP
+            Los dioses antisemitas te bendicen con ${cantidad} de HP
             </span>`
         );
 
@@ -269,7 +269,7 @@ class Personaje{
 
         agregarLog(
             `<span class="skill">
-            ✨ Golpe poderoso: ${daño} daño
+            Golpe NEIN: ${daño} daño
             </span>`
         );
 
@@ -307,7 +307,7 @@ const enemigos=[
 
     {
         nombre:"Benjamin Netanyahu",
-        hp:100,
+        hp:70,
         ataque:14,
         defensa:5,
         imagen:"imagenes/Netanyahu.png"
@@ -316,7 +316,7 @@ const enemigos=[
 
     {
         nombre:"Estado legitimo de Israel",
-        hp:200,
+        hp:100,
         ataque:22,
         defensa:8,
         imagen:"imagenes/Israel.png"
@@ -334,7 +334,7 @@ function crearEnemigo(){
 
 
     let nivel =
-    Math.floor(Math.random()*20)+1;
+    Math.floor(Math.random()*10)+1;
 
 
 
@@ -385,7 +385,7 @@ function nuevoCombate(){
 
     agregarLog(
         `<span class="warning">
-        ⚠ Apareció ${enemigo.nombre} nivel ${enemigo.nivel}
+        ⚠ Apareció ${enemigo.nombre} de nivel ${enemigo.nivel}
         </span>`
     );
 

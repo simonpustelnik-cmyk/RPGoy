@@ -9,9 +9,9 @@
 
 body{
 
-    background:#151515;
+    background:#0008ff;
 
-    color:white;
+    color:rgb(0, 47, 255);
 
     font-family:Arial, Helvetica, sans-serif;
 
@@ -81,13 +81,13 @@ body{
 
     width:300px;
 
-    background:#292929;
+    background:#f2eeee;
 
     padding:30px;
 
     border-radius:15px;
 
-    box-shadow:0 0 25px black;
+    box-shadow:0 0 25px rgb(242, 238, 238);
 
 }
 
@@ -161,7 +161,7 @@ body{
 
 .card{
 
-    background:#292929;
+    background:#f3f3f3;
 
     width:320px;
 
@@ -169,7 +169,7 @@ body{
 
     border-radius:15px;
 
-    box-shadow:0 0 25px black;
+    box-shadow:0 0 25px rgb(246, 244, 244);
 
 }
 
@@ -266,7 +266,7 @@ body{
 
     margin:40px auto;
 
-    background:#222;
+    background:#fcfcfc;
 
     border-radius:15px;
 
@@ -351,9 +351,9 @@ button:active{
 
 #btnAttack{
 
-    background:#e74c3c;
+    background:#f5f4f7;
 
-    color:white;
+    color:rgb(0, 16, 246);
 
 }
 
@@ -361,9 +361,9 @@ button:active{
 
 #btnSkill{
 
-    background:#8e44ad;
+    background:#f0f0f3;
 
-    color:white;
+    color:rgb(11, 3, 245);
 
 }
 
@@ -371,9 +371,9 @@ button:active{
 
 #btnPotion{
 
-    background:#27ae60;
+    background:#f1f1f4;
 
-    color:white;
+    color:rgb(5, 13, 239);
 
 }
 
@@ -381,9 +381,9 @@ button:active{
 
 #btnDefend{
 
-    background:#2980b9;
+    background:#fbfbfc;
 
-    color:white;
+    color:rgb(23, 2, 244);
 
 }
 
@@ -393,7 +393,7 @@ button:active{
 
     margin-top:30px;
 
-    background:#f39c12;
+    background:#fafafa;
 
 }
 
@@ -411,21 +411,21 @@ button:active{
 
 .damage{
 
-    color:#ff5555;
+    color:#1e06f6;
 
 }
 
 
 .heal{
 
-    color:#55ff77;
+    color:#0039f5;
 
 }
 
 
 .critical{
 
-    color:#ffaa00;
+    color:#003bed;
 
 }
 
@@ -439,21 +439,21 @@ button:active{
 
 .skill{
 
-    color:#cc66ff;
+    color:#1602f1;
 
 }
 
 
 .warning{
 
-    color:#ffff55;
+    color:#1100f6;
 
 }
 
 
 .success{
 
-    color:#00ff99;
+    color:#1900ff;
 
 }
 
