@@ -68,17 +68,17 @@ const personajes = [
 
     {
         nombre:"Alemania",
-        hp:150,
-        ataque:100,
-        defensa:10,
+        hp:70,
+        ataque:50,
+        defensa:5,
         imagen:"imagenes/Alemania.png"
     },
 
     {
         nombre:"Palestina",
-        hp:200,
-        ataque:50,
-        defensa:20,
+        hp:100,
+        ataque:25,
+        defensa:10,
         imagen:"imagenes/Palestina.png"
     },
 
