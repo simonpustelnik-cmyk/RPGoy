@@ -334,7 +334,7 @@ function crearEnemigo(){
 
 
     let nivel =
-    Math.floor(Math.random()*10)+1;
+    Math.floor(Math.random()*20)+1;
 
 
 
