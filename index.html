@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RPG por Turnos</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     SELECCIÓN DE PERSONAJE
+========================= -->
+
+
+<section id="selectionScene" class="scene">
+
+
+    <h1>Elige tu héroe</h1>
+
+
+    <div id="characterSelector">
+
+
+        <button id="previousCharacter">
+            ◀
+        </button>
+
+
+
+        <div id="selectedCharacter">
+
+
+            <img 
+            id="characterImage"
+            src="imagenes/pintorAustriaco.png"
+            alt="Personaje">
+
+
+            <h2 id="characterName">
+                Pintor Austriaco
+            </h2>
+
+
+            <div id="characterStats">
+
+                <p id="characterHP"></p>
+
+                <p id="characterAttack"></p>
+
+                <p id="characterDefense"></p>
+
+            </div>
+
+
+        </div>
+
+
+
+        <button id="nextCharacter">
+            ▶
+        </button>
+
+
+    </div>
+
+
+
+    <button id="confirmCharacter">
+        Comenzar aventura
+    </button>
+
+
+</section>
+
+
+
+
+
+
+<!-- =========================
+     COMBATE
+========================= -->
+
+
+<section id="gameScene" class="scene hidden">
+
+
+<h1>RPG por Turnos</h1>
+
+
+
+<div id="battlefield">
+
+
+
+    <div class="card">
+
+
+        <h2 id="heroName"></h2>
+
+
+        <img
+        id="heroImage"
+        class="characterImage"
+        src=""
+        alt="Héroe">
+
+
+
+        <div class="barBackground">
+
+            <div 
+            id="heroHPBar"
+            class="hpBar">
+
+            </div>
+
+        </div>
+
+
+
+        <p id="heroHP"></p>
+
+
+
+        <div class="stats">
+
+            <p id="heroLevel"></p>
+
+            <p id="heroXP"></p>
+
+            <p id="heroGold"></p>
+
+            <p id="heroPotions"></p>
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <div class="card">
+
+
+        <h2 id="enemyName"></h2>
+
+
+
+        <img
+        id="enemyImage"
+        class="characterImage"
+        src=""
+        alt="Enemigo">
+
+
+
+        <div class="barBackground">
+
+            <div
+            id="enemyHPBar"
+            class="hpBar">
+
+            </div>
+
+        </div>
+
+
+
+        <p id="enemyHP"></p>
+
+
+        <div class="stats">
+
+            <p id="enemyLevel"></p>
+
+        </div>
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- REGISTRO -->
+
+
+<div id="combatLog">
+
+
+<h2>
+Registro de combate
+</h2>
+
+
+<div id="logText">
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<!-- ACCIONES -->
+
+
+<div id="actions">
+
+
+<button id="btnAttack">
+
+⚔ Atacar
+
+</button>
+
+
+
+<button id="btnSkill">
+
+✨ Habilidad
+
+</button>
+
+
+
+<button id="btnPotion">
+
+🧪 Objeto
+
+</button>
+
+
+
+<button id="btnDefend">
+
+🛡 Defender
+
+</button>
+
+
+</div>
+
+
+
+
+
+<button id="btnRestart">
+
+🔄 Nuevo combate
+
+</button>
+
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================
+     DERROTA
+========================= -->
+
+
+<section id="defeatScene" class="scene hidden">
+
+
+    <h1>
+        💀 Perdiste
+    </h1>
+
+
+    <p>
+        Tu aventura terminó...
+    </p>
+
+
+
+    <button id="retryButton">
+
+        Reintentar
+
+    </button>
+
+
+</section>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>

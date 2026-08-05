@@ -1,0 +1,550 @@
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    background:#151515;
+
+    color:white;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    text-align:center;
+
+}
+
+
+/* =========================
+   SISTEMA DE ESCENAS
+========================= */
+
+
+.scene{
+
+    min-height:100vh;
+
+}
+
+
+.hidden{
+
+    display:none !important;
+
+}
+
+
+
+
+
+/* =========================
+   SELECCION
+========================= */
+
+
+#selectionScene{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:40px;
+
+}
+
+
+
+#characterSelector{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:60px;
+
+}
+
+
+
+#selectedCharacter{
+
+    width:300px;
+
+    background:#292929;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 25px black;
+
+}
+
+
+
+#characterImage{
+
+    width:180px;
+
+    height:180px;
+
+    object-fit:contain;
+
+}
+
+
+
+#characterStats{
+
+    margin-top:20px;
+
+    line-height:1.8;
+
+}
+
+
+
+#previousCharacter,
+#nextCharacter{
+
+    font-size:40px;
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+}
+
+
+
+
+
+/* =========================
+   COMBATE
+========================= */
+
+
+#gameScene{
+
+    padding-top:20px;
+
+}
+
+
+
+#battlefield{
+
+    display:flex;
+
+    justify-content:space-around;
+
+    align-items:center;
+
+    margin-top:40px;
+
+}
+
+
+
+.card{
+
+    background:#292929;
+
+    width:320px;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 0 25px black;
+
+}
+
+
+
+.characterImage{
+
+    width:200px;
+
+    height:200px;
+
+    object-fit:contain;
+
+    margin:20px;
+
+}
+
+
+
+
+
+
+/* =========================
+   VIDA
+========================= */
+
+
+.barBackground{
+
+    width:100%;
+
+    height:25px;
+
+    background:#555;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+}
+
+
+
+.hpBar{
+
+    height:100%;
+
+    width:100%;
+
+    background:#35d04b;
+
+    transition:.3s;
+
+}
+
+
+
+
+
+
+
+/* =========================
+   STATS
+========================= */
+
+
+.stats{
+
+    margin-top:20px;
+
+    line-height:1.7;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   LOG
+========================= */
+
+
+#combatLog{
+
+    width:700px;
+
+    max-width:90%;
+
+    min-height:200px;
+
+    margin:40px auto;
+
+    background:#222;
+
+    border-radius:15px;
+
+    padding:20px;
+
+    text-align:left;
+
+}
+
+
+
+#logText{
+
+    margin-top:15px;
+
+    min-height:150px;
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   BOTONES
+========================= */
+
+
+#actions{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,220px);
+
+    justify-content:center;
+
+    gap:20px;
+
+}
+
+
+
+button{
+
+    padding:15px 25px;
+
+    font-size:18px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:.2s;
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+
+button:active{
+
+    transform:scale(.95);
+
+}
+
+
+
+
+#btnAttack{
+
+    background:#e74c3c;
+
+    color:white;
+
+}
+
+
+
+#btnSkill{
+
+    background:#8e44ad;
+
+    color:white;
+
+}
+
+
+
+#btnPotion{
+
+    background:#27ae60;
+
+    color:white;
+
+}
+
+
+
+#btnDefend{
+
+    background:#2980b9;
+
+    color:white;
+
+}
+
+
+
+#btnRestart{
+
+    margin-top:30px;
+
+    background:#f39c12;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   COLORES DEL REGISTRO
+========================= */
+
+
+.damage{
+
+    color:#ff5555;
+
+}
+
+
+.heal{
+
+    color:#55ff77;
+
+}
+
+
+.critical{
+
+    color:#ffaa00;
+
+}
+
+
+.defense{
+
+    color:#55aaff;
+
+}
+
+
+.skill{
+
+    color:#cc66ff;
+
+}
+
+
+.warning{
+
+    color:#ffff55;
+
+}
+
+
+.success{
+
+    color:#00ff99;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   DERROTA
+========================= */
+
+
+#defeatScene{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:30px;
+
+}
+
+
+
+#defeatScene h1{
+
+    font-size:60px;
+
+    color:#ff4444;
+
+}
+
+
+
+#retryButton{
+
+    background:#27ae60;
+
+    color:white;
+
+    font-size:25px;
+
+    padding:20px 50px;
+
+}
+
+
+
+
+
+
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+
+@media(max-width:800px){
+
+
+    #battlefield{
+
+        flex-direction:column;
+
+        gap:30px;
+
+    }
+
+
+
+    #characterSelector{
+
+        gap:20px;
+
+    }
+
+
+
+    #actions{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
