@@ -67,19 +67,19 @@ const logText = document.getElementById("logText");
 const personajes = [
 
     {
-        nombre:"Pintor Austriaco",
+        nombre:"Alemania",
         hp:150,
         ataque:100,
         defensa:25,
-        imagen:"imagenes/pintorAustriaco.png"
+        imagen:"imagenes/Alemania.png"
     },
 
     {
-        nombre:"Soldado Palestino",
+        nombre:"Palestina",
         hp:200,
         ataque:50,
         defensa:50,
-        imagen:"imagenes/SoldadoPalestino.png"
+        imagen:"imagenes/Palestina.png"
     },
 
 ];
@@ -245,7 +245,7 @@ class Personaje{
 
         agregarLog(
             `<span class="heal">
-            Los dioses antisemitas te bendicen con ${cantidad} de HP
+            Los dioses te bendicen con ${cantidad} de HP
             </span>`
         );
 
@@ -269,7 +269,7 @@ class Personaje{
 
         agregarLog(
             `<span class="skill">
-            Golpe NEIN: ${daño} daño
+            Golpe Libertario: ${daño} daño
             </span>`
         );
 

@@ -11,7 +11,7 @@ body{
 
     background:#0008ff;
 
-    color:rgb(0, 47, 255);
+    color:rgb(0, 0, 250);
 
     font-family:Arial, Helvetica, sans-serif;
 
@@ -81,13 +81,13 @@ body{
 
     width:300px;
 
-    background:#f2eeee;
+    background:#ffffff;
 
     padding:30px;
 
     border-radius:15px;
 
-    box-shadow:0 0 25px rgb(242, 238, 238);
+    box-shadow:0 0 25px rgb(34, 4, 229);
 
 }
 
@@ -161,7 +161,7 @@ body{
 
 .card{
 
-    background:#f3f3f3;
+    background:#f8f8fc;
 
     width:320px;
 
@@ -169,7 +169,7 @@ body{
 
     border-radius:15px;
 
-    box-shadow:0 0 25px rgb(246, 244, 244);
+    box-shadow:0 0 25px rgb(253, 253, 253);
 
 }
 
