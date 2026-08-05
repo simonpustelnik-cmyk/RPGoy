@@ -70,7 +70,7 @@ const personajes = [
         nombre:"Alemania",
         hp:150,
         ataque:100,
-        defensa:25,
+        defensa:10,
         imagen:"imagenes/Alemania.png"
     },
 
@@ -78,7 +78,7 @@ const personajes = [
         nombre:"Palestina",
         hp:200,
         ataque:50,
-        defensa:50,
+        defensa:20,
         imagen:"imagenes/Palestina.png"
     },
 
